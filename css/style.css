@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+.top-margin-1rem {
+  margin-top: 1rem; }
+
+.padding-30 {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+@media only screen and (max-width: 990px) {
+  .col-lg:not(:first-child) {
+    margin-top: 1.2rem; } }
+
+.top-banner {
+  padding: 0;
+  margin-bottom: .4rem; }
+  .top-banner__item p {
+    font-family: "Oswald", sans-serif;
+    color: #494949;
+    font-size: .8rem;
+    text-transform: uppercase; }
+  .top-banner__item svg {
+    width: .7rem;
+    height: .7rem;
+    fill: #494949; }
+
+.navbar-custom {
+  background-color: #1D1D1D;
+  padding: 0;
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+.nav-item {
+  text-transform: uppercase; }
+  .nav-item a {
+    color: #eec700;
+    font-weight: 700; }
+
+.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 8rem;
+  height: 5rem;
+  background: url("../img/logo.svg");
+  background-size: 8rem 5rem; }
+
+.navbar-text span {
+  text-transform: uppercase;
+  color: #d3d3d3; }
+
+.navbar-text svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: #eec700;
+  position: relative;
+  top: .2rem;
+  margin-right: 1.5rem; }
+
+.carousel-div .carousel-control-prev {
+  background-color: rgba(48, 48, 48, 0.4);
+  width: 10rem; }
+
+.carousel-div .carousel-control-next {
+  background-color: rgba(48, 48, 48, 0.4);
+  width: 10rem; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none; }
+
+.carousel-indicators .active {
+  background-color: #eec700; }
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: .7rem;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #eec700;
+  border-radius: 10px; }
+
+.item {
+  position: relative; }
+  .item p {
+    display: block;
+    color: #090200;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0; }
+  .item-men-shoes {
+    background: url("../img/men-sneakers.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 990px) {
+      .item-men-shoes {
+        background-position-y: 50%; } }
+  .item-women-shoes {
+    background: url("../img/women-sneakers.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 990px) {
+      .item-women-shoes {
+        background-position-y: 90%; } }
+  .item-era-hats {
+    background: url("../img/era-hats.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+    @media only screen and (max-width: 990px) {
+      .item-era-hats {
+        background-position-y: 40%; } }
+
+.main-title {
+  padding: 0 5rem .2rem 1rem;
+  top: 15%; }
+
+.sub-title {
+  top: 27%;
+  padding: 0 5rem .2rem 1rem; }
+
+.main-title, .sub-title {
+  background: linear-gradient(to right, rgba(238, 198, 0, 0.7) 0%, rgba(234, 222, 165, 0.7) 71%, rgba(232, 232, 232, 0) 100%);
+  position: absolute; }
+
+.box .main-title, .sub-title {
+  display: inline-block; }
+
+.adidas-clothes {
+  position: relative;
+  height: 25rem;
+  background: url("../img/full-width-img.jpg") no-repeat;
+  background-size: cover; }
+  .adidas-clothes p {
+    display: block;
+    color: #090200;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0; }
+  .adidas-clothes .main-title {
+    opacity: .95;
+    top: 30%; }
+  .adidas-clothes .sub-title {
+    opacity: .95;
+    top: 50%;
+    padding-right: 10rem; }
