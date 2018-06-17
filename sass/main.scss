@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+
+// Variables
+// Font:
+$oswald: 'Oswald', sans-serif;
+
+// Colors:
+$color-grey: rgb(73, 73, 73);
+$color-grey-light: #d3d3d3;
+$color-nav: #1D1D1D;
+$color-nav-text: #eec700;
+
+body{
+    font-family: 'Oswald', 'sans-serif';
+}
+
+@import "utilities";
+@import "topBanner";
+@import "navbar";
+@import "carousel";
+@import "main-content";

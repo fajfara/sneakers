@@ -1,0 +1,19 @@
+.top-banner{
+    padding: 0;
+    margin-bottom: .4rem;
+    &__item{
+        & p {
+            font-family: $oswald;
+            color: $color-grey;
+            font-size: .8rem;
+            text-transform: uppercase;
+
+        }
+        & svg {
+            width: .7rem;
+            height: .7rem;
+            fill: $color-grey;
+        }
+    }
+}
+

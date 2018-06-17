@@ -1,0 +1,19 @@
+.top-margin-1rem {
+    margin-top: 1rem;
+}
+
+.padding-30{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media only screen and (max-width: 990px) {
+    .col-lg:not(:first-child){
+        margin-top: 1.2rem;
+    }
+}
+
+
+.container-fluid .col-lg{
+    padding: 1rem;
+}
