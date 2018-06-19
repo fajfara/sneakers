@@ -123,22 +123,22 @@ body {
 .box .main-title, .sub-title {
   display: inline-block; }
 
-#first-row .row .col-lg-4 {
+#sneakers-first-row .row .col-lg-4 {
   padding-right: 0; }
   @media only screen and (max-width: 990px) {
-    #first-row .row .col-lg-4 {
+    #sneakers-first-row .row .col-lg-4 {
       padding-right: 1rem;
       padding-top: 1rem; } }
 
-#second-row {
+#adidas-clothes {
   padding-top: 1rem; }
-  #second-row .adidas-clothes {
+  #adidas-clothes .adidas-clothes {
     position: relative;
     height: 25rem; }
-    #second-row .adidas-clothes img {
+    #adidas-clothes .adidas-clothes img {
       width: 100%;
       height: 100%; }
-    #second-row .adidas-clothes p {
+    #adidas-clothes .adidas-clothes p {
       display: block;
       color: #090200;
       text-transform: uppercase;
@@ -146,61 +146,75 @@ body {
       font-weight: 700;
       font-size: 3rem;
       margin: 0; }
-    #second-row .adidas-clothes .main-title {
+    #adidas-clothes .adidas-clothes .main-title {
       opacity: .95;
       top: 30%; }
-    #second-row .adidas-clothes .sub-title {
+    #adidas-clothes .adidas-clothes .sub-title {
       opacity: .95;
       top: 50%;
       padding-right: 10rem; }
 
-#third-row .row .col-lg-4 {
+#sneakers-second-row .row .col-lg-4 {
   padding-right: 0; }
   @media only screen and (max-width: 990px) {
-    #third-row .row .col-lg-4 {
+    #sneakers-second-row .row .col-lg-4 {
       padding-right: 1rem;
       padding-top: 1rem; } }
 
-#fourth-row {
+#logo-row {
   padding-top: 1rem; }
   @media only screen and (max-width: 1080px) {
-    #fourth-row .row .box {
+    #logo-row .row .box {
       padding-left: 5rem; } }
 
-#fifth-row {
+#video-title-row {
   padding-top: 1rem; }
-  #fifth-row .row h1 {
+  #video-title-row .row h1 {
     color: white;
     background-color: #1D1D1D;
     padding: 1rem;
     text-transform: uppercase;
     font-size: 1.5rem; }
 
-#sixth-row {
+#video-row {
   margin-top: -.5rem; }
-  #sixth-row .product-info {
+  #video-row .product-info {
     background-color: #eec700;
-    padding: 2.3rem 3rem 2rem 1.2rem; }
-    #sixth-row .product-info .box {
+    padding: 2.3rem 3rem 2rem 1.2rem;
+    z-index: 1000; }
+    #video-row .product-info .box {
       line-height: .5rem;
       font-family: 'Oswald', 'sans-serif'; }
-      #sixth-row .product-info .box .product-name {
+      #video-row .product-info .box .product-name {
         font-weight: 700;
         letter-spacing: .1rem;
         font-size: 1.3rem;
         text-transform: uppercase; }
-      #sixth-row .product-info .box .product-price {
+        @media only screen and (max-width: 991px) {
+          #video-row .product-info .box .product-name {
+            font-size: 1rem; } }
+      #video-row .product-info .box .product-price {
         font-weight: 700; }
-  #sixth-row .product-image .box {
+  #video-row .product-image .box {
     position: relative; }
-    #sixth-row .product-image .box img {
+    #video-row .product-image .box img {
       position: absolute;
       top: 2rem; }
-    #sixth-row .product-image .box span {
+      @media only screen and (max-width: 991px) {
+        #video-row .product-image .box img {
+          top: -6rem;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 20rem;
+          height: 20rem; } }
+    #video-row .product-image .box span {
       position: absolute;
       text-transform: uppercase;
       font-weight: 700;
       top: 25rem; }
+      @media only screen and (max-width: 991px) {
+        #video-row .product-image .box span {
+          top: 8rem; } }
 
 .big-picture-models {
   padding-top: 1rem;
@@ -209,26 +223,17 @@ body {
     background-color: #1D1D1D;
     position: relative;
     height: 3rem; }
+    .big-picture-models .box img {
+      top: 0;
+      right: .02rem;
+      height: 3rem;
+      position: absolute; }
   .big-picture-models .box-img {
     width: 100%;
     height: 100%; }
     .big-picture-models .box-img img {
       width: 100%;
       height: 100%; }
-  .big-picture-models .yellow-bar {
-    background-color: #eec700;
-    position: absolute;
-    top: 0;
-    left: 97.1%;
-    display: block;
-    width: 3rem;
-    height: 100%; }
-    .big-picture-models .yellow-bar span {
-      font-family: "Oswald", sans-serif;
-      position: relative;
-      top: -24%;
-      font-weight: 700;
-      font-size: 2.5rem; }
   .big-picture-models h1 {
     font-size: 1.5rem;
     color: white;
@@ -237,11 +242,91 @@ body {
 .women-models {
   margin-top: 1rem; }
 
-#ninth-row {
+#stores-and-social {
+  position: relative; }
+  #stores-and-social .store-info .carousel-indicators {
+    position: absolute;
+    top: 18rem;
+    left: 16rem; }
+  #stores-and-social .store-info img {
+    width: 20rem;
+    margin-top: 1rem; }
+  #stores-and-social .store-info svg {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .3rem; }
+  #stores-and-social .store-info h1 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 1rem; }
+  #stores-and-social .social-links .box .title-social {
+    border-top: solid black; }
+    #stores-and-social .social-links .box .title-social h1 {
+      margin-top: 1rem;
+      font-size: 1.7rem;
+      font-weight: 700;
+      position: absolute;
+      left: -.05rem; }
+    #stores-and-social .social-links .box .title-social p {
+      margin-top: 4rem; }
+  #stores-and-social .blog-link::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    height: 1px;
+    width: 90%;
+    border-bottom: 3px solid black; }
+  #stores-and-social .blog-link h1 {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem; }
+  #stores-and-social .blog-link span {
+    font-size: 1rem;
+    font-weight: 700; }
+  #stores-and-social .blog-link p {
+    margin-top: 1.5rem; }
+  #stores-and-social .blog-link .button {
+    padding: 1rem;
+    background-color: #1D1D1D;
+    text-align: center;
+    width: 100%; }
+    #stores-and-social .blog-link .button a {
+      text-decoration: none;
+      color: white; }
+
+.yellow-bar-full {
   margin-top: 2rem; }
-  #ninth-row .box h1 {
+  .yellow-bar-full .box h1 {
     background-color: #eec700;
     text-transform: uppercase;
     font-size: 1.5rem;
     padding: .5rem;
     padding-left: 1rem; }
+
+.e-news .box {
+  background-color: #eec700;
+  position: relative; }
+  .e-news .box h1 {
+    display: inline-block; }
+  .e-news .box input {
+    padding: .3rem;
+    width: 30%;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  .e-news .box a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #1D1D1D;
+    color: white;
+    padding: .3rem;
+    float: right;
+    position: relative;
+    top: .5rem;
+    left: -.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }

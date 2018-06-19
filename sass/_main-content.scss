@@ -43,7 +43,7 @@
  // Styling the rows
 
 // First row under carousel - nike, new era
- #first-row{
+ #sneakers-first-row{
     & .row {
 
         & .col-lg-4 {
@@ -59,7 +59,7 @@
  }
 
  // second row - adidas clothes
- #second-row{
+ #adidas-clothes{
      padding-top: 1rem;
      &  .adidas-clothes{
         position: relative;
@@ -93,7 +93,7 @@
  }
 
 // Third row - converse, balance and asics
- #third-row{
+ #sneakers-second-row{
     & .row {
 
         & .col-lg-4 {
@@ -107,7 +107,7 @@
  }
 
  // Fourth row- the logos
-#fourth-row{
+#logo-row{
     padding-top: 1rem;
     & .row {
         & .box {
@@ -121,7 +121,7 @@
 }
 
 // Video predstavitev title
-#fifth-row{
+#video-title-row{
     padding-top: 1rem;
     & .row {
         & h1{
@@ -135,11 +135,12 @@
 }
 
 // video + product
-#sixth-row{
+#video-row{
     margin-top: -.5rem;
     & .product-info{
         background-color: $color-nav-text;
         padding: 2.3rem 3rem 2rem 1.2rem;
+        z-index: 1000;
 
         & .box{
             line-height: .5rem;
@@ -149,6 +150,11 @@
                 letter-spacing: .1rem;
                 font-size: 1.3rem;
                 text-transform: uppercase;
+                @media only screen and (max-width: 991px) {
+                    font-size: 1rem;
+                }
+
+
             }
 
             & .product-price{
@@ -163,6 +169,13 @@
             & img{
                 position: absolute;
                 top: 2rem;
+                @media only screen and (max-width: 991px) {
+                    top: -6rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 20rem;
+                    height: 20rem;
+                }
             }
 
             & span {
@@ -170,6 +183,9 @@
                 text-transform: uppercase;
                 font-weight: 700;
                 top: 25rem;
+                @media only screen and (max-width: 991px) {
+                    top: 8rem;
+                }
             }
         }
     }
@@ -183,6 +199,13 @@
         background-color: $color-nav;
         position: relative;
         height: 3rem;
+
+        & img{
+            top: 0;
+            right: .02rem;
+            height: 3rem;
+            position: absolute;
+        }
     }
 
     & .box-img{
@@ -195,24 +218,7 @@
         }
     }
 
-    & .yellow-bar{
-        background-color: $color-nav-text;
-        position: absolute;
-        top: 0;
-        left: 97.1%;
-        display: block;
-        width: 3rem;
-        height: 100%;
-
-        & span {
-            font-family: $oswald;
-            position: relative;
-            top: -24%;
-            font-weight: 700;
-            font-size: 2.5rem;
-            
-        }
-    }
+    
     & h1{
         font-size: 1.5rem;
         color: white;  
@@ -224,7 +230,99 @@
     margin-top: 1rem;
 }
 
-#ninth-row{
+#stores-and-social{
+    position: relative;
+    & .store-info{
+        & .carousel-indicators{
+            position: absolute;
+            top: 18rem;
+            left: 16rem;
+        }
+
+        & img {
+            width: 20rem;
+            margin-top: 1rem;
+
+        }
+
+        & svg {
+            width: 1rem;
+            height: 1rem;
+            margin-right: .3rem;
+        }
+
+        & h1 {
+            text-transform: uppercase;
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+
+
+    }
+
+    & .social-links{
+        & .box {
+            & .title-social{
+                border-top: solid black;
+                & h1{
+                    margin-top: 1rem;
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                    position: absolute;
+                    left: -.05rem;
+                }
+
+                & p{
+                    margin-top: 4rem;
+                }
+            }
+        }
+    }
+
+    & .blog-link{
+        &::before{
+            content: "";
+            position: absolute;
+            left: 1rem;
+            top: 0;
+            height: 1px;
+            width: 90%;
+            border-bottom: 3px solid black;
+        }
+
+        & h1 {
+            margin-top: 1rem;
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+
+        }
+
+        & span {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        & p{
+            margin-top: 1.5rem;
+        }
+
+        & .button{
+            padding:1rem;
+            background-color: $color-nav;
+            text-align: center;
+            width: 100%;
+
+            & a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.yellow-bar-full{
     margin-top: 2rem;
 
     & .box {
@@ -235,5 +333,39 @@
             padding: .5rem;
             padding-left: 1rem;
         }
+    }
+}
+
+.e-news{
+    & .box{
+        background-color: $color-nav-text;
+        position: relative;
+        & h1{
+            display: inline-block;
+        }
+
+        & input {
+            padding: .3rem;
+            width: 30%;
+            position: absolute;
+            top: .5rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        & a {
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: $color-nav;
+            color: white;
+            padding: .3rem;
+            float: right;
+            position: relative;
+            top: .5rem;
+            left: -.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
     }
 }
