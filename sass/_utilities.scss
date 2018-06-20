@@ -17,3 +17,15 @@
 .container-fluid .col-lg{
     padding: 1rem;
 }
+
+.lg-pr-1{
+    @media only screen and (min-width: 990px) {
+        padding-right: 0 !important;
+    }
+}
+
+.lg-pl-0{
+    @media only screen and (min-width: 990px) {
+        padding-left: 0 !important;
+    }
+}
