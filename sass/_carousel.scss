@@ -1,18 +1,25 @@
+// Styling the main carousel
 .carousel-div{
     
 
     & .carousel-control-prev{
         background-color: rgba(48, 48, 48, .4);
         width: 10rem;
+        @media only screen and (max-width: 600px) {
+            width: 2rem;
+        }
     }
 
     & .carousel-control-next{
         background-color: rgba(48, 48, 48, .4);
         width: 10rem;
+        @media only screen and (max-width: 600px) {
+            width: 2rem;
+        }
     }
 
 }
-
+// Styling the main carousel indicators
 .carousel-indicators {
     position: absolute;
     bottom: 10px;
